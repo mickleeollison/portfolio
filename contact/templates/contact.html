@@ -1,0 +1,41 @@
+{% extends "main_template.html" %}
+{% block content %}	
+    <body class="contact">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+
+              <h4>Welcome to  My Developer Portfolio</h4>
+
+        </div>
+		  
+             <ul class="nav navbar-nav navbar-right">
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'projects' %}">Sample Projects</a></li>
+				<li><a href="https://github.com/mickleeollison">Github Account</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>  
+          </ul>
+      </div>
+    </div>
+      
+    <div class="container">
+		<div class="jumbotron">
+			<div class="center">
+				<span class="label label-danger">Email</span>
+				<span>mickenzielollison@gmail.com</span>
+			</div>
+			<div class="center">
+				<span class="label label-success">Phone</span>
+				<span>503) 799-9159</span>
+			</div>
+			<div class="center">
+				<span class="label label-primary">LinkedIn</span>
+			<span><a href="https://www.linkedin.com/in/mickenzie-ollison-5b9636123?authType=NAME_SEARCH&authToken=YKPL&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A512169693%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1475695311952%2Ctas%3AMick">Mickenzie's LinkedIn</a></span>
+			</div>
+		</div>
+    </div>
+ </body>
+{% endblock %}

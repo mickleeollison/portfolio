@@ -1,0 +1,131 @@
+{% extends "main_template.html" %}
+{% block content %}	
+    <body class="projects">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+
+              <h4>Welcome to  My Developer Portfolio</h4>
+
+        </div>
+		  
+             <ul class="nav navbar-nav navbar-right">
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'projects' %}">Sample Projects</a></li>
+				<li><a href="https://github.com/mickleeollison">Github Account</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>  
+          </ul>
+      </div>
+    </div>
+      
+    <div class="container">
+		<div class="jumbotron">
+  			<h2>Sample Projects</h2>
+  				<p>
+					Here is a list of personal projects I've created over the past year as a sample of my development work. I've provided images descriptions, and, eventually, links to running instances of these projects. 
+				</p>
+			  <div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+					<h4 class="panel-title">
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">CarLookUp</a>
+					</h4>
+				  </div>
+				  <div id="collapse1" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>
+						A way to look up add modify and remove cars along with just keeping track of them in general
+						</p>
+						<img src="../../static/images/StaryNight.gif" class="img-thumbnail">
+						<a href="https://aws.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=aws_core_p_control_q32016&sc_detail=amazon%20aws&sc_category=cloud_computing&sc_segment=102882719922&sc_matchtype=p&sc_country=US&s_kwcid=AL!4422!3!102882719922!p!!g!!amazon%20aws&ef_id=V23vqwAAAS2jlLOB:20161005184250:s">CarLookUp Site (Sorry Currently Under Construction)</a>
+					  </div>
+				  </div>
+				</div>
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+					<h4 class="panel-title">
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Menu</a>
+					</h4>
+				  </div>
+				  <div id="collapse2" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>
+						Allows a user to order food from a menue of drinks and food items and allows a manager to add, remove, update, and look over all food and drink items.
+						</p>
+						<img src="../../static/images/StaryNight.gif" class="img-thumbnail">
+						<a href="https://aws.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=aws_core_p_control_q32016&sc_detail=amazon%20aws&sc_category=cloud_computing&sc_segment=102882719922&sc_matchtype=p&sc_country=US&s_kwcid=AL!4422!3!102882719922!p!!g!!amazon%20aws&ef_id=V23vqwAAAS2jlLOB:20161005184250:s">Menu Site (Sorry Currently Under Construction)</a>
+					  </div>
+				  </div>
+				</div>
+				  <div class="panel panel-default">
+				  <div class="panel-heading">
+					<h4 class="panel-title">
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Superheros</a>
+					</h4>
+				  </div>
+				  <div id="collapse3" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>
+						A way to look up add modify and remove superheros (and powers) along with creating and managing teams and search capabilities.
+						</p>
+						<img src="../../static/images/StaryNight.gif" class="img-thumbnail">
+						<a href="https://aws.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=aws_core_p_control_q32016&sc_detail=amazon%20aws&sc_category=cloud_computing&sc_segment=102882719922&sc_matchtype=p&sc_country=US&s_kwcid=AL!4422!3!102882719922!p!!g!!amazon%20aws&ef_id=V23vqwAAAS2jlLOB:20161005184250:s">Superheros Site (Sorry Currently Under Construction)</a>
+					  </div>
+				  </div>
+				</div>
+				  <div class="panel panel-default">
+				  <div class="panel-heading">
+					<h4 class="panel-title">
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Express-O</a>
+					</h4>
+				  </div>
+				  <div id="collapse4" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>
+						This is a minimalistic coffee shop application allowing logged in users to view, create, modify, bererage ingredients, and drink recipies as well as baked goods.
+						</p>
+						<img src="../../static/images/StaryNight.gif" class="img-thumbnail">
+						<a href="https://aws.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=aws_core_p_control_q32016&sc_detail=amazon%20aws&sc_category=cloud_computing&sc_segment=102882719922&sc_matchtype=p&sc_country=US&s_kwcid=AL!4422!3!102882719922!p!!g!!amazon%20aws&ef_id=V23vqwAAAS2jlLOB:20161005184250:s">Express-O Site (Sorry Currently Under Construction)</a>
+					  </div>
+				  </div>
+				</div>
+				  <div class="panel panel-default">
+				  <div class="panel-heading">
+					<h4 class="panel-title">
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Topics</a>
+					</h4>
+				  </div>
+				  <div id="collapse5" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>
+						An application which allows logged in users to view and create posts within topics and the capabilities to modify and remove their own posts. Admins may additionally create modify and remove topics, as well as mange users and all posts.
+						</p>
+						<img src="../../static/images/StaryNight.gif" class="img-thumbnail">
+						<a href="https://aws.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=aws_core_p_control_q32016&sc_detail=amazon%20aws&sc_category=cloud_computing&sc_segment=102882719922&sc_matchtype=p&sc_country=US&s_kwcid=AL!4422!3!102882719922!p!!g!!amazon%20aws&ef_id=V23vqwAAAS2jlLOB:20161005184250:s">CarLookUp Site (Sorry Currently Under Construction)</a>
+					  </div>
+				  </div>
+				</div>
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+					<h4 class="panel-title">
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">JobSearch</a>
+					</h4>
+				  </div>
+				  <div id="collapse6" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>
+						Facilitates users job search through allowing users to create (along with remove) custom templates from Microsorft Word documents that have custom templates (i.e., words placed within square brackets) and allows users to choose a template and fillout a form which dynamicially creates input values from the keywords in the templates. Also keeps track of each users total "applications" created.
+						</p>
+						<img src="../../static/images/StaryNight.gif" class="img-thumbnail">
+						<a href="https://aws.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=aws_core_p_control_q32016&sc_detail=amazon%20aws&sc_category=cloud_computing&sc_segment=102882719922&sc_matchtype=p&sc_country=US&s_kwcid=AL!4422!3!102882719922!p!!g!!amazon%20aws&ef_id=V23vqwAAAS2jlLOB:20161005184250:s">JobSearch Site (Sorry Currently Under Construction)</a>
+					  </div>
+				  </div>
+				</div>
+    		</div>
+  		</div>
+	</div>
+</body>
+{% endblock %}
